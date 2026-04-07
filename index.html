@@ -339,6 +339,46 @@
     color: #fff !important;
     transform: scale(1.1) rotate(5deg);
   }
+
+  /* ── FLOATING CTA BUTTON ── */
+  .floating-cta {
+    position: fixed !important;
+    bottom: 30px !important;
+    right: 30px !important;
+    width: 65px !important;
+    height: 65px !important;
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%) !important;
+    color: #fff !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 1.8rem !important;
+    box-shadow: 0 10px 25px rgba(30, 58, 138, 0.4) !important;
+    z-index: 9999 !important;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+    text-decoration: none !important;
+    border: 3px solid #fff !important;
+  }
+  .floating-cta:hover {
+    transform: scale(1.1) translateY(-5px) !important;
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%) !important;
+    color: #01244a !important;
+    box-shadow: 0 15px 35px rgba(251, 191, 36, 0.4) !important;
+    border-color: #fbbf24 !important;
+  }
+  .floating-cta i {
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+  }
+  @media (max-width: 767px) {
+    .floating-cta {
+      bottom: 20px !important;
+      right: 20px !important;
+      width: 55px !important;
+      height: 55px !important;
+      font-size: 1.5rem !important;
+    }
+  }
   </style>
 
   <!-- Font Awesome 6 -->
@@ -1226,7 +1266,10 @@
   });
 </script>
 
-<!-- Floating Badge Removed per User Request -->
+<!-- Floating CTA Button -->
+<a href="https://www.fasttrack37.com/PM7HK3TH/2QXQB9J8/?uid=47627" class="floating-cta" aria-label="Purchase EcoWatt Now">
+  <i class="fa-solid fa-cart-shopping"></i>
+</a>
 
 </body>
 </html>
